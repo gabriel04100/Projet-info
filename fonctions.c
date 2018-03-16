@@ -1,23 +1,130 @@
 typedef struct
 {
 
-	int longueur;
-	int largeur;
-	int espacement;
+	int lines;
+	int columns;
+	int size;
 	
 
 
 
-}QUADRILLAGE;
-// definition de la structure de quadrillage dépendantes de 3 variables longueur largeur et l'espacement entre deux lignes/deux colonnes
-
-void draw_quadri(int longueur ,int largeur,int espacement)
+}GRID;
+typedef struct
 	{
 
+
+
+	int x;
+	int y;
+	}POS;
+typedef struct
+	{
+		int x;
+		int y;
+
+
+
+	}END;
+int draw_grid(lines,columns,size)
+	{
+
+
+	}	
+
+int move_left(int x,int lines)
+	{
+		if (x ==0)
+		return -1;
+		else 
+		return x-1;
+
+
+	}
+int move_right(int x,int lines)
+	{
+
+	if (x==lines-2)
+	return -1;
+	else 
+	return x+1;
+	}
+	
+int move_up(int y,int columns)
+	{
+	if (y ==0)
+	return -1;
+	else 
+	return y+1
+
+	}
+int move_down(int y,int columns)
+	{
+	if (y==(columns-2))
+	return -1;
+	else 
+	return y-1;
+	} 
+void update_graphics()
+	{
+	clear_screen();
+       /*
+
+
+
+	*/
+	upddate_graphics();
+
+	}
+ int jeu()
+	{
+	int compteur =0;
+	GRID g;
+	POS p;
+	END e;
+	draw_grid();
+	int a;
+	do
+	{
+	if (getkey()==key_LEFT)
+	a = move_left(p.x,lines);
+	else if (getkey()==key_RIGHT)
+	a= move_right(p.x,lines);
+	else if (getkey()==key_UP)
+	a= move_up(p.y,columns);
+	else if (getkey()==key_DOWN)
+	a=move_down(p.y.columns);
+	}while(a ==-1)
+	
+	compteur ++;
+	//update_graphics();
+	
+
+
+
+	}while(p.x != e.x && p.y != e.y);
 
 
 
 
 
 	}
-//construit un quadrillage graphique en fonction des données entrées ce fait en fonction de l'écran 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
