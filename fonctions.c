@@ -1,5 +1,5 @@
 
-void draw_grid(*lines,*columns,*size)
+void draw_grid(lines,columns,size)
 	{
 
 
