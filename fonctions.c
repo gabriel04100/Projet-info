@@ -75,7 +75,7 @@ void update_graphics()
 
 
 
-	}while((*p).x != (*e).x && (*p).y != (*e).y);
+	}while(*p != *e);
 
 
 
