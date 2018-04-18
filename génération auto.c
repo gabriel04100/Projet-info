@@ -301,9 +301,9 @@ while((li<=finli)&&(co>=finco))
     }
 
 
-
+touche=dir();
      update_graphics();
-     touche=dir();
+     
 
 
 }
