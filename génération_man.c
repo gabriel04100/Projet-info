@@ -222,7 +222,7 @@ draw_circle_full(li,co,7);
 
 update_graphics();
 
-;
+sup_g(li,co,t);
 //int y=dir();
 while((li<=finli)&&(co>=finco))
 
